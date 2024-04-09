@@ -46,9 +46,9 @@
 [SomeDataPackType]
 ; 数据集合属性
 NumberPacks=                                    ; 数值数据集合列表 , 使用第 1 , 2 项 (或第 1 , 2 , 3 项 , 或第 1 项) 的数据
-Owner=Self                                      ; 作战方归属 , 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 Self (不区分大小写)
+Owner=Self                                      ; 作战方归属 , 仅给所有作战方中匹配的作战方设置 , 相对于当前作战方
+                                                ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 Self (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
-                                                ; 仅给所有作战方中匹配的作战方设置 , 相对于当前作战方
 ```
 
 ```ini
