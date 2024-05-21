@@ -128,6 +128,7 @@ Effect.Timer=0                                  ; 整数 , 小于 0 按 0 算 , 
 Effect.Delay=0                                  ; 整数 , 小于 0 按 0 算 , 默认值是 0
 Effect.Range=0                                  ; 浮点数 , 一般表示范围 , 小于 0 按 0 算 , 默认值是 0
 Effect.Random=no                                ; yes/no , 一般表示是否随机 , 默认值是 no
+Effect.Display=yes                              ; yes/no , 一般用于是否显示提示信息 (仅游戏原本的行为) , 默认值是 yes
 Effect.Self=yes                                 ; yes/no , 一般表示是否影响自己 (单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 一般表示是否影响其他 (单位) , 默认值是 yes
 Effect.Source=no                                ; yes/no , 默认值是 no
