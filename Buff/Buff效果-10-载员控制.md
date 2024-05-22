@@ -30,7 +30,7 @@ Effect.Type=TransportFill
 [SomeBuffType]
 ; 效果种类相关属性
 Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
-Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则允许任意单位
+Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则无法创建
 Effect.Random=no                                ; yes/no , 创建随机种类的单位 , 否则按顺序创建 , 默认值是 no
 Effect.Counts=-1                                ; 整数 , 填充的次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每隔这么多帧填充一次 , 小于 0 按 0 算 , 但是每一帧最多填充一次 , 默认值是 0 , 单位 : 帧
@@ -369,7 +369,7 @@ Effect.Type=TransportAttackFill
 [SomeBuffType]
 ; 效果种类相关属性
 Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
-Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则允许任意单位
+Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则无法创建
 Effect.Random=no                                ; yes/no , 创建随机种类的单位 , 否则按顺序创建 , 默认值是 no
 Effect.Counts=-1                                ; 整数 , 填充的次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每隔这么多帧填充一次 , 小于 0 按 0 算 , 但是每一帧最多填充一次 , 默认值是 0 , 单位 : 帧
@@ -711,7 +711,7 @@ Effect.Type=TransportDefendFill
 [SomeBuffType]
 ; 效果种类相关属性
 Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
-Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则允许任意单位
+Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则无法创建
 Effect.Random=no                                ; yes/no , 创建随机种类的单位 , 否则按顺序创建 , 默认值是 no
 Effect.Counts=-1                                ; 整数 , 填充的次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每隔这么多帧填充一次 , 小于 0 按 0 算 , 但是每一帧最多填充一次 , 默认值是 0 , 单位 : 帧
