@@ -2,23 +2,23 @@
 
 # 判断数值-主动 <主动>
 
-以下各项所用的参数都是一样的，区别是包含的算法不同。
-
-|`<EffectType>`|对应的 AI 脚本动作（数据包的数据结构）|包含的算法|运算目数|
-|:-:|:-:|:-:|:-:|
-|`CheckNumber.Eq`|`50400,n`|等于|双目运算|
-|`CheckNumber.NE`|`50401,n`|不等于|双目运算|
-|`CheckNumber.GT`|`50402,n`|大于|双目运算|
-|`CheckNumber.GE`|`50403,n`|大于等于|双目运算|
-|`CheckNumber.LT`|`50404,n`|小于|双目运算|
-|`CheckNumber.LE`|`50405,n`|小于等于|双目运算|
-
 位于 `rulesmd.ini`：
 
 ```ini
 [SomeBuffType]
 Effect.Type=<EffectType>
 ```
+
+以下各项所用的参数都是一样的，区别是包含的算法不同。
+
+|`Effect.Type=<EffectType>`|对应的 AI 脚本动作（数据包的数据结构）|包含的算法|运算目数|
+|:-:|:-:|:-:|:-:|
+|`Effect.Type=CheckNumber.Eq`|`50400,n`|等于|双目运算|
+|`Effect.Type=CheckNumber.NE`|`50401,n`|不等于|双目运算|
+|`Effect.Type=CheckNumber.GT`|`50402,n`|大于|双目运算|
+|`Effect.Type=CheckNumber.GE`|`50403,n`|大于等于|双目运算|
+|`Effect.Type=CheckNumber.LT`|`50404,n`|小于|双目运算|
+|`Effect.Type=CheckNumber.LE`|`50405,n`|小于等于|双目运算|
 
 生效时会立刻进行一次【判断】，如果判断成功，则对自己挂载 Buff 并引爆弹头。  
 详见 [AI脚本动作-判断数值](/触发与AI脚本动作/AI脚本动作-5-判断数值.md#ai脚本动作-判断数值)。  
@@ -75,23 +75,23 @@ Effect.Random=no                                ; yes/no , 不全部引爆时 , 
 
 # 判断数值-死亡 <亡语>
 
-以下各项所用的参数都是一样的，区别是包含的算法不同。
-
-|`<EffectType>`|对应的 AI 脚本动作|包含的算法|运算目数|
-|:-:|:-:|:-:|:-:|
-|`CheckNumberDeath.Eq`|`50400,n`|等于|双目运算|
-|`CheckNumberDeath.NE`|`50401,n`|不等于|双目运算|
-|`CheckNumberDeath.GT`|`50402,n`|大于|双目运算|
-|`CheckNumberDeath.GE`|`50403,n`|大于等于|双目运算|
-|`CheckNumberDeath.LT`|`50404,n`|小于|双目运算|
-|`CheckNumberDeath.LE`|`50405,n`|小于等于|双目运算|
-
 位于 `rulesmd.ini`：
 
 ```ini
 [SomeBuffType]
 Effect.Type=<EffectType>
 ```
+
+以下各项所用的参数都是一样的，区别是包含的算法不同。
+
+|`Effect.Type=<EffectType>`|对应的 AI 脚本动作|包含的算法|运算目数|
+|:-:|:-:|:-:|:-:|
+|`Effect.Type=CheckNumberDeath.Eq`|`50400,n`|等于|双目运算|
+|`Effect.Type=CheckNumberDeath.NE`|`50401,n`|不等于|双目运算|
+|`Effect.Type=CheckNumberDeath.GT`|`50402,n`|大于|双目运算|
+|`Effect.Type=CheckNumberDeath.GE`|`50403,n`|大于等于|双目运算|
+|`Effect.Type=CheckNumberDeath.LT`|`50404,n`|小于|双目运算|
+|`Effect.Type=CheckNumberDeath.LE`|`50405,n`|小于等于|双目运算|
 
 生效时会立刻进行一次【判断】，如果判断成功，则对自己挂载 Buff 并引爆弹头。  
 详见 [AI脚本动作-判断数值](/触发与AI脚本动作/AI脚本动作-5-判断数值.md#ai脚本动作-判断数值)。  
