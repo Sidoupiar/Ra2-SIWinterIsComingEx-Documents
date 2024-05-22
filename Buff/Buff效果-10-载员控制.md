@@ -29,7 +29,7 @@ Effect.Type=TransportFill
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则允许任意单位
 Effect.Random=no                                ; yes/no , 创建随机种类的单位 , 否则按顺序创建 , 默认值是 no
 Effect.Counts=-1                                ; 整数 , 填充的次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
@@ -142,7 +142,7 @@ Effect.Type=TransportExit
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>目标位置播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 释放这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 释放符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -200,7 +200,7 @@ Effect.Type=TransportRemove
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 移除这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 移除符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -317,7 +317,7 @@ Effect.Type=PassengerExit
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>目标位置播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 脱出这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 脱出符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -368,7 +368,7 @@ Effect.Type=TransportAttackFill
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则允许任意单位
 Effect.Random=no                                ; yes/no , 创建随机种类的单位 , 否则按顺序创建 , 默认值是 no
 Effect.Counts=-1                                ; 整数 , 填充的次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
@@ -482,7 +482,7 @@ Effect.Type=TransportAttackExit
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>目标位置播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 释放这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 释放符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -541,7 +541,7 @@ Effect.Type=TransportAttackRemove
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 移除这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 移除符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -659,7 +659,7 @@ Effect.Type=PassengerAttackExit
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>目标位置播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 脱出这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 脱出符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -710,7 +710,7 @@ Effect.Type=TransportDefendFill
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 创建这些种类的单位 , 不写则允许任意单位
 Effect.Random=no                                ; yes/no , 创建随机种类的单位 , 否则按顺序创建 , 默认值是 no
 Effect.Counts=-1                                ; 整数 , 填充的次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
@@ -824,7 +824,7 @@ Effect.Type=TransportDefendExit
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>目标位置播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 释放这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 释放符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -883,7 +883,7 @@ Effect.Type=TransportDefendRemove
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 动画 , 【<载具>身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 移除这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 移除符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
@@ -1001,7 +1001,7 @@ Effect.Type=PassengerDefendExit
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>原始位置播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【<载具>身上播放的动画】【<载员>目标位置播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 脱出这些种类的单位 , 不写则允许任意单位
 Effect.UnitType=All                             ; 单位种类 , 脱出符合种类的单位
                                                 ; 可用值 : All (无简写) , Building | B , Infantry | I , Unit | U , Aircraft | A , 默认值是 All (不区分大小写)
