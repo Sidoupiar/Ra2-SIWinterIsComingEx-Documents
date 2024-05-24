@@ -131,6 +131,7 @@ Effect.Random=no                                ; yes/no , 一般表示是否随
 Effect.Display=yes                              ; yes/no , 一般用于是否显示提示信息 (仅游戏原本的行为) , 默认值是 yes
 Effect.Self=yes                                 ; yes/no , 一般表示是否影响自己 (单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 一般表示是否影响其他 (单位) , 默认值是 yes
+Effect.Attacker=no                              ; yes/no , 一般表示是否影响攻击者 (单位 , 当前单位是被攻击者) , 默认值是 no
 Effect.Source=no                                ; yes/no , 一般表示是否影响来源 (单位) , 默认值是 no
 Effect.Target=no                                ; yes/no , 一般表示是否影响目标 (单位) , 默认值是 no
 Effect.FromSource=no                            ; yes/no , 默认值是 no
