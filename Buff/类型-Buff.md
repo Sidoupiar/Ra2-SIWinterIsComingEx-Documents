@@ -116,6 +116,7 @@ Effect.Counts=-1                                ; 整数列表 , 默认值是 -1
 Effect.Amounts=-1                               ; 整数列表 , 默认值是 -1
 Effect.AnimDelays=31                            ; 整数列表 , 默认值是 31
 Effect.Modes=0                                  ; 整数列表 , 无效值默认为 0 , 默认值是 0
+Effect.Values=0                                 ; 浮点数列表 , 默认值是 0
 Effect.Healths=-1                               ; 浮点数列表 , 默认值是 -1
 Effect.Power.Limits=-1                          ; 浮点数列表 , 默认值是 -1
 Effect.UnitType=All                             ; 单位种类
