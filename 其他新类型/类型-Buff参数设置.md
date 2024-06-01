@@ -45,6 +45,7 @@ DurationReset=no                                ; yes/no , 是否使用这里的
                                                 ; 当 DurationReset=yes 且 Duration < 0 时 , 会把 Buff 的挂载持续时间覆盖成永久
                                                 ; 当 DurationReset=yes 且 Duration == 0 时 , 会使用 Buff 自己的默认挂载持续时间
 DurationEffect=yes                              ; yes/no , 附加的挂载持续时间是否会受到单位的 Buff 抗性的影响 , 默认值是 yes
+DurationAffectAfter=no                          ; yes/no , 是否会给处于【结束状态】的 Buff 增加挂载持续时间 , 默认值是 no
 
 ; 生命值
 HealthSelf=no                                   ; yes/no , 是否使用 Buff 自身设置的 Health 而非下方的 Health 的值 , 默认值是 no , 单位 : 点
