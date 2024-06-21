@@ -373,10 +373,12 @@ Effect.Type=AttackBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -431,6 +433,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -479,6 +484,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -523,6 +531,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -573,6 +584,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -630,10 +644,12 @@ Effect.Type=AttackTransBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -688,6 +704,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -742,6 +761,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -799,11 +821,13 @@ Effect.Type=DefendBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -857,7 +881,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -905,7 +932,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 ```
@@ -949,7 +979,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 ```
@@ -999,7 +1032,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1056,11 +1092,13 @@ Effect.Type=DefendTransBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1114,7 +1152,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1168,7 +1209,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1225,11 +1269,13 @@ Effect.Type=DamagedBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1287,7 +1333,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1339,7 +1388,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【伤害类型模式】 , 无效值默认为 0 , 默认值是 0
@@ -1388,7 +1440,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【伤害类型模式】 , 无效值默认为 0 , 默认值是 0
@@ -1443,7 +1498,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1504,11 +1562,13 @@ Effect.Type=DamagedTransBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1566,7 +1626,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1624,7 +1687,10 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
-Effect.Owner=All                                ; 作战方归属 , 需要攻击来源单位 (如果存在的话) 符合作战方
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1685,11 +1751,13 @@ Effect.Type=KillBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 如果设置了则只有击杀了符合要求的单位才会生效
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -1749,6 +1817,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -1802,6 +1873,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -1852,6 +1926,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -1908,6 +1985,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -1969,11 +2049,13 @@ Effect.Type=KillTransBuffMark
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 动画 , 【生效时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【生效时在自己身上播放的动画】【生效时在受影响单位身上播放的动画】 , 不写就不显示动画
 Effect.Technos=                                 ; 单位列表 , 如果设置了则只有击杀了符合要求的单位才会生效
 Effect.AcceptBuffs=                             ; Buff 列表 , 挂载这些 Buff , 没设置就不挂载
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -2033,6 +2115,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
@@ -2092,6 +2177,9 @@ Effect.AcceptBuffs=                             ; Buff 列表 , 仅对这些 Buf
 Effect.ExceptBuffs=                             ; Buff 列表 , 不对这些 Buff 生效 , 如果两个列表都设置了就必须同时满足两个列表才行
 Effect.Counts=-1                                ; 整数 , 生效次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
+Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
+Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
+Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
