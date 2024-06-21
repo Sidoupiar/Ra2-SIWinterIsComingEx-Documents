@@ -379,7 +379,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -436,7 +436,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -487,7 +487,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 ```
@@ -534,7 +534,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 ```
@@ -587,7 +587,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -650,7 +650,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -707,7 +707,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -764,7 +764,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要命中的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -827,7 +827,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -884,7 +884,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -935,7 +935,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 ```
@@ -982,7 +982,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 ```
@@ -1035,7 +1035,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1098,7 +1098,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1155,7 +1155,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1212,7 +1212,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1275,7 +1275,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1336,7 +1336,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1391,7 +1391,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【伤害类型模式】 , 无效值默认为 0 , 默认值是 0
@@ -1443,7 +1443,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【伤害类型模式】 , 无效值默认为 0 , 默认值是 0
@@ -1501,7 +1501,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1568,7 +1568,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1629,7 +1629,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1690,7 +1690,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要攻击单位 (如果存在的话) 符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【伤害类型模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1758,7 +1758,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【单位筛选模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1820,7 +1820,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【单位筛选模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -1876,7 +1876,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【单位筛选模式】 , 无效值默认为 0 , 默认值是 0
@@ -1929,7 +1929,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0                                  ; 整数 , 【单位筛选模式】 , 无效值默认为 0 , 默认值是 0
@@ -1988,7 +1988,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【单位筛选模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -2056,7 +2056,7 @@ Effect.Counts=-1                                ; 整数 , 生效次数 , 次数
 Effect.Delay=0                                  ; 整数 , 每次生效后多长时间内无法再次生效 , 0 = 不限制 , 小于 0 按 0 算 , 默认值是 0 , 单位 : 帧
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 是否给单位自己挂载 , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【单位筛选模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -2118,7 +2118,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【单位筛选模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
@@ -2180,7 +2180,7 @@ Effect.Delay=0                                  ; 整数 , 每次生效后多长
 Effect.Range=0                                  ; 浮点数 , 影响的范围 (半径) , 0 = 只影响挂载了当前 Buff 的单位 , 大于 0 会影响范围内的单位的 Buff , 小于 0 按 0 算 , 默认值是 0 , 单位 : 格子
 Effect.Self=yes                                 ; yes/no , 影响当前 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
 Effect.Other=yes                                ; yes/no , 影响其他 Buff (挂载了当前 Buff 的单位) , 默认值是 yes
-Effect.Owner=All                                ; 作战方归属 , 需要目标单位符合作战方
+Effect.Owner=All                                ; 作战方归属 , 需要被击杀的单位符合作战方
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
 Effect.Modes=0,0                                ; 两个整数 , 【单位筛选模式】【效果强度值作用模式】 , 无效值默认为 0 , 默认值是 0
