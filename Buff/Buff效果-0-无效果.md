@@ -95,6 +95,7 @@ Effect.Timer=0                                  ; 整数 , 生效时间的最大
 |`Digital.Secondary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Tertiary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Quaternary=`|-|-|-|-|未使用此项数值显示。|
+|`Digital.Button=`|-|-|-|-|未使用按钮功能。|
 
 
 
@@ -134,6 +135,7 @@ Effect.Timer=0                                  ; 整数 , 生效时间的最大
 |`Digital.Secondary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Tertiary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Quaternary=`|-|-|-|-|未使用此项数值显示。|
+|`Digital.Button=`|-|-|-|-|未使用按钮功能。|
 
 
 

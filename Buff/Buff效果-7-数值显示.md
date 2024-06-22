@@ -38,3 +38,4 @@ Effect.Amounts=-1,-1                            ; 两个整数 , 作战方局部
 |`Digital.Secondary=`|第 1 个作战方局部变量的值|第 2 个作战方局部变量的值|-|-|此项不支持【血条】的缓冲残影。|
 |`Digital.Tertiary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Quaternary=`|-|-|-|-|未使用此项数值显示。|
+|`Digital.Button=`|-|-|-|-|未使用按钮功能。|
