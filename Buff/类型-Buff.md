@@ -127,6 +127,8 @@ Effect.UnitType=All                             ; 单位种类
 Effect.Owner=All                                ; 作战方归属
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 All (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 符号连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
+Effect.ExtraCodeA=0                             ; 整数 , 额外代码 A , 与 Effect.Modes 不同 , 它是支持动态修改的 , 无效值默认为 0 , 默认值是 0
+Effect.ExtraCodeB=0                             ; 整数 , 额外代码 B , 与 Effect.Modes 不同 , 它是支持动态修改的 , 无效值默认为 0 , 默认值是 0
 Effect.Timer=0                                  ; 整数 , 小于 0 按 0 算 , 默认值是 0
 Effect.Delay=0                                  ; 整数 , 小于 0 按 0 算 , 默认值是 0
 Effect.Range=0                                  ; 浮点数 , 一般表示范围 , 小于 0 按 0 算 , 默认值是 0
