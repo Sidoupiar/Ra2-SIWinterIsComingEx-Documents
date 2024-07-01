@@ -34,8 +34,7 @@ AllowExist=yes,yes,yes,yes                      ; 四个 yes/no , Buff 在单位
                                                 ; 【转换】包括展开或收起 , 还有类似多段升级的这种 , 暂不支持武直这种类型的转换
                                                 ; 【单位断电、被 EMP、被静默等】中 , 被静默需要分模式 , 仅建筑的模式 1 和 2 , 以及单位的模式 1 会被读取
 AllowPlayer=yes                                 ; yes/no , 是否允许玩家持有的单位挂载此 Buff , 默认值是 yes
-AllowAI=yes                                     ; yes/no , 是否允许 AI 持有的单位挂载此 Buff , 中立阵营也算 AI 控制的 , 默认值是 yes
-AllowAIDifficulty=yes,yes,yes                   ; 三个 yes/no , 是否允许 AI 持有的单位挂载此Buff , 按难度区分 , 分别是【简单】【中等】【冷酷】 , 默认值是 yes,yes,yes
+AllowAI=yes,yes,yes                             ; 三个 yes/no , 是否允许 AI 持有的单位挂载此 Buff , 中立阵营也算 AI 控制的 , 按难度区分 , 分别是【简单】【中等】【冷酷】 , 默认值是 yes,yes,yes
 AllowGameMode=yes,yes                           ; 两个 yes/no , 是否允许在战役模式和其他模式 (遭遇战) 下挂载此 Buff , 默认值是 yes,yes
 EnableCodeDamage=yes                            ; yes/no , Buff 是否会忽视 (不处理) 拥有 IgnoreDefenses=yes 标识的伤害 (通常是各种机制杀的伤害) , 当 Buff 拥有伤害处理相关的处理阶段时才有效 , 亡语不受此控制 (效果会正常触发) , yes = 忽视这样的伤害 , 默认值是 yes
 NeedPowered=no                                  ; yes/no , Buff 是否会在单位断电、被 EMP、被静默等时失效 , 不影响下方的各种动画 , 默认值是 no
