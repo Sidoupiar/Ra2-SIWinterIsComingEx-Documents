@@ -18,15 +18,26 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.MultVersus`|倍率：护甲伤害|受到的伤害会`乘以`此值。|
 |`Effect.Type=Prop.MultAttack`|倍率：火力||
 |`Effect.Type=Prop.MultROF`|倍率：射速||
-|`Effect.Type=Prop.MultEXP`|倍率：经验值获取|加成变成负数会让单位的经验值越来越少，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
-|`Effect.Type=Prop.MultEXPProvide`|倍率：经验值提供|加成变成负数会让单位提供负数的经验值，另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
-|`Effect.Type=Prop.MultEXPCost`|倍率：经验值获取|`除法`形式的 `MultEXP`，此值为 0 时会强制变为 0.1%，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+|`Effect.Type=Prop.MultEXP`|倍率：经验值获取|加成变成负数会让单位的经验值越来越少。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+|`Effect.Type=Prop.MultEXPProvide`|倍率：经验值提供|加成变成负数会让单位提供负数的经验值。另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
+|`Effect.Type=Prop.MultEXPCost`|倍率：经验值获取|`除法`形式的 `MultEXP`，此值为 0 时会强制变为 0.1%。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+
+|`Effect.Type=Prop.ExMultSpeed`|累乘：移动|由于精度问题，会放弃小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultArmor`|累乘：护甲|受到的伤害会`除以`此值，由于精度问题，会放弃小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultVersus`|累乘：护甲伤害|受到的伤害会`乘以`此值，由于精度问题，会放弃小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultAttack`|累乘：火力|由于精度问题，会放弃小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultROF`|累乘：射速|由于精度问题，会放弃小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultEXP`|累乘：经验值获取|加成变成负数会让单位的经验值越来越少由于精度问题，会放弃小于 1% 的因数。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+|`Effect.Type=Prop.ExMultEXPProvide`|累乘：经验值提供|加成变成负数会让单位提供负数的经验值由于精度问题，会放弃小于 1% 的因数。另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
+|`Effect.Type=Prop.ExMultEXPCost`|累乘：经验值获取|`除法`形式的 `MultEXP`由于精度问题，会放弃小于 1% 的因数。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+
 |`Effect.Type=Prop.AddSpeed`|追加：移动||
 |`Effect.Type=Prop.AddDamage`|追加：伤害||
 |`Effect.Type=Prop.AddAttack`|追加：攻击||
 |`Effect.Type=Prop.AddROF`|追加：射速|开火后调整，无法扣成 `0` 延迟。|
 |`Effect.Type=Prop.AddEXP`|追加：经验值获取|加成变成负数会让单位的经验值越来越少，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
 |`Effect.Type=Prop.AddEXPProvide`|追加：经验值提供|加成变成负数会让单位提供负数的经验值，另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
+|`Effect.Type=Prop.AddRangeWeapon`|追加：武器射程|因为 Phobos 已经有类似的功能了，并且存在功能冲突，因此这个 Buff 效果种类暂时无效。|
 
 算法：
 ```lua
