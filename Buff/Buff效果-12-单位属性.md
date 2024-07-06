@@ -21,14 +21,14 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.MultEXP`|倍率：经验值获取|加成变成负数会让单位的经验值越来越少。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
 |`Effect.Type=Prop.MultEXPProvide`|倍率：经验值提供|加成变成负数会让单位提供负数的经验值。另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
 |`Effect.Type=Prop.MultEXPCost`|倍率：经验值获取|`除法`形式的 `MultEXP`，此值为 0 时会强制变为 0.1%。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
-|`Effect.Type=Prop.ExMultSpeed`|累乘：移动|由于精度问题，会放弃小于 1% 的因数。|
-|`Effect.Type=Prop.ExMultArmor`|累乘：护甲|受到的伤害会`除以`此值，由于精度问题，会放弃小于 1% 的因数。|
-|`Effect.Type=Prop.ExMultVersus`|累乘：护甲伤害|受到的伤害会`乘以`此值，由于精度问题，会放弃小于 1% 的因数。|
-|`Effect.Type=Prop.ExMultAttack`|累乘：火力|由于精度问题，会放弃小于 1% 的因数。|
-|`Effect.Type=Prop.ExMultROF`|累乘：射速|由于精度问题，会放弃小于 1% 的因数。|
-|`Effect.Type=Prop.ExMultEXP`|累乘：经验值获取|加成变成负数会让单位的经验值越来越少由于精度问题，会放弃小于 1% 的因数。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
-|`Effect.Type=Prop.ExMultEXPProvide`|累乘：经验值提供|加成变成负数会让单位提供负数的经验值由于精度问题，会放弃小于 1% 的因数。另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
-|`Effect.Type=Prop.ExMultEXPCost`|累乘：经验值获取|`除法`形式的 `MultEXP`由于精度问题，会放弃小于 1% 的因数。另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+|`Effect.Type=Prop.ExMultSpeed`|累乘：移动|由于精度问题，会放弃绝对值小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultArmor`|累乘：护甲|由于精度问题，会放弃绝对值小于 1% 的因数。受到的伤害会`除以`此值。|
+|`Effect.Type=Prop.ExMultVersus`|累乘：护甲伤害|由于精度问题，会放弃绝对值小于 1% 的因数。受到的伤害会`乘以`此值。|
+|`Effect.Type=Prop.ExMultAttack`|累乘：火力|由于精度问题，会放弃绝对值小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultROF`|累乘：射速|由于精度问题，会放弃绝对值小于 1% 的因数。|
+|`Effect.Type=Prop.ExMultEXP`|累乘：经验值获取|由于精度问题，会放弃绝对值小于 1% 的因数。加成变成负数会让单位的经验值越来越少，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+|`Effect.Type=Prop.ExMultEXPProvide`|累乘：经验值提供|由于精度问题，会放弃绝对值小于 1% 的因数。加成变成负数会让单位提供负数的经验值，另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
+|`Effect.Type=Prop.ExMultEXPCost`|累乘：经验值获取|由于精度问题，会放弃绝对值小于 1% 的因数。`除法`形式的 `MultEXP`，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
 |`Effect.Type=Prop.AddSpeed`|追加：移动||
 |`Effect.Type=Prop.AddDamage`|追加：伤害||
 |`Effect.Type=Prop.AddAttack`|追加：攻击||
@@ -36,11 +36,18 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.AddEXP`|追加：经验值获取|加成变成负数会让单位的经验值越来越少，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
 |`Effect.Type=Prop.AddEXPProvide`|追加：经验值提供|加成变成负数会让单位提供负数的经验值，另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
 |`Effect.Type=Prop.AddRangeWeapon`|追加：武器射程|因为 Phobos 已经有类似的功能了，并且存在功能冲突，因此这个 Buff 效果种类暂时无效。|
+|`Effect.Type=Prop.FinalSpeed`|最终：移动|和追加一样，是加算。|
+|`Effect.Type=Prop.FinalDamage`|最终：伤害|和追加一样，是加算。|
+|`Effect.Type=Prop.FinalAttack`|最终：攻击|和追加一样，是加算。|
+|`Effect.Type=Prop.FinalROF`|最终：射速|和追加一样，是加算。开火后调整，无法扣成 `0` 延迟。|
+|`Effect.Type=Prop.FinalEXP`|最终：经验值获取|和追加一样，是加算。加成变成负数会让单位的经验值越来越少，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
+|`Effect.Type=Prop.FinalEXPProvide`|最终：经验值提供|和追加一样，是加算。加成变成负数会让单位提供负数的经验值，另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
+|`Effect.Type=Prop.FinalRangeWeapon`|最终：武器射程|和追加一样，是加算。因为 Phobos 已经有类似的功能了，并且存在功能冲突，因此这个 Buff 效果种类暂时无效。|
 
 算法：
 ```lua
--- 部分 [倍率] 是除法 , [追加] 均是加法 , 还请注意
-实际值 = 原始值 * ( 1 + 倍率1 + 倍率2 + ... + 倍率n ) * ( 1 * 累乘1 * 累乘2 * ... * 累乘n ) + ( 追加1 + 追加2 + ... + 追加n )
+-- 部分 [倍率] 是除法 , [追加] 和 [最终] 均是加法 , 还请注意
+实际值 = ( 原始值 * ( 1 + 倍率1 + 倍率2 + ... + 倍率n ) + ( 追加1 + 追加2 + ... + 追加n ) ) * ( 1 * 累乘1 * 累乘2 * ... * 累乘n ) + ( 最终1 + 最终2 + ... + 最终n )
 ```
 
 Buff 会周期性地增加单位加成属性。
