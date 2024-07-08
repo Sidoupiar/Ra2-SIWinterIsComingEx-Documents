@@ -195,11 +195,11 @@ Digital.Tertiary=                               ; 数值显示设置 , 显示第
 Digital.Quaternary=                             ; 数值显示设置 , 显示第 4 类数值 (显示哪些数值请见具体的 Buff 效果) , 不设置不显示 , 默认值是 空
 Digital.Button=                                 ; 按钮显示设置 , 显示按钮 , 这是一个进行了特殊优化的【数值显示设置】 , 大部分【血条】相关的属性都彼此通用 , 不设置不显示 , 默认值是 空
 Digital.Button.KeyBinds=                        ; 按钮绑定列表 , 有几个按钮写几个绑定 , 不写的算不绑定 , 详细情况请见【空白快捷键】部分
-                                                ; 可用值 : 0 = 无绑定 , 1 - 6 = 第 1 到第 6 个快捷键 , 默认值是 0
-Digital.Button.Owner=Self                       ; 作战方归属 , 谁可以通过绑定的空白快捷键点击按钮
+                                                ; 可用值 : 1 - 12 = 第 1 个到第 12 个【空白快捷键】 , 0 或其他值 = 无绑定 (建议写 0) , 默认值是 0
+Digital.Button.Owner=Self                       ; 作战方归属 , 谁可以通过绑定的【空白快捷键】点击按钮
                                                 ; 可用值 : All (无简写) , Self | S , Allies | A , Enemies | E , Neutral | N , 默认值是 Self (不区分大小写)
                                                 ; 当需要匹配多种作战方时 , 多个值之间使用 "," 字符连接即可 , 栗如同时匹配己方和敌方 : Self,Enemies 或 S,E (简写可以混用 , 不要有空格)
-Digital.Button.Observer=no                      ; yes/no , 观察者是否可以通过绑定的空白快捷键点击按钮 , 默认值是 no
+Digital.Button.Observer=no                      ; yes/no , 观察者是否可以通过绑定的【空白快捷键】点击按钮 , 默认值是 no
 Digital.AutoOffset=yes                          ; yes/no , 是否会根据 Buff 的 Order 属性自动偏移 , 从而避免显示的数值和其他 Buff 重叠在一起 , 偏移的高度由【数值显示设置】的 Size 属性决定 , 默认值是 yes
 Digital.BufferSpeed=0.005                       ; 浮点数 , 【血条】的缓冲残影的消失速度 (对【按钮】无效) , 速度是每帧减少的百分比 , 0.005 意味着每帧减少 0.5% , 200 帧会掉空 , 默认值是 0.005 , 单位 : 比例/帧
 ```
