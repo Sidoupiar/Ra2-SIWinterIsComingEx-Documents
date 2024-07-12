@@ -35,14 +35,14 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.AddROF`|追加：射速|开火后调整，无法扣成 `0` 延迟。|
 |`Effect.Type=Prop.AddEXP`|追加：经验值获取|加成变成负数会让单位的经验值越来越少，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
 |`Effect.Type=Prop.AddEXPProvide`|追加：经验值提供|加成变成负数会让单位提供负数的经验值，另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
-|`Effect.Type=Prop.AddRangeWeapon`|追加：武器射程|因为 Phobos 已经有类似的功能了，并且存在功能冲突，因此这个 Buff 效果种类暂时无效。|
+|`Effect.Type=Prop.AddRangeWeapon`|追加：武器射程|无法适用于 Phobos 的脚本和区域开火逻辑。|
 |`Effect.Type=Prop.FinalSpeed`|最终：移动|和追加一样，是加算。|
 |`Effect.Type=Prop.FinalDamage`|最终：伤害|和追加一样，是加算。|
 |`Effect.Type=Prop.FinalAttack`|最终：攻击|和追加一样，是加算。|
 |`Effect.Type=Prop.FinalROF`|最终：射速|和追加一样，是加算。开火后调整，无法扣成 `0` 延迟。|
 |`Effect.Type=Prop.FinalEXP`|最终：经验值获取|和追加一样，是加算。加成变成负数会让单位的经验值越来越少，另见 [获取经验值](/经验值与升级与军衔图像/属性-单位.md#获取经验值)。|
 |`Effect.Type=Prop.FinalEXPProvide`|最终：经验值提供|和追加一样，是加算。加成变成负数会让单位提供负数的经验值，另见 [提供经验值](/经验值与升级与军衔图像/属性-单位.md#提供经验值)。|
-|`Effect.Type=Prop.FinalRangeWeapon`|最终：武器射程|和追加一样，是加算。因为 Phobos 已经有类似的功能了，并且存在功能冲突，因此这个 Buff 效果种类暂时无效。|
+|`Effect.Type=Prop.FinalRangeWeapon`|最终：武器射程|和追加一样，是加算。无法适用于 Phobos 的脚本和区域开火逻辑。|
 
 属性算法：
 ```lua
@@ -50,7 +50,7 @@ Effect.Type=<EffectType>
 -- ExMult = [累乘]
 -- Add    = [追加]
 -- Final  = [最终]
--- 部分 [倍率] 是除法 , [追加] 和 [最终] 均是加法 , 且武器射程暂时无效 , 还请注意
+-- 部分 [倍率] 是除法 , [追加] 和 [最终] 均是加法
 实际值 = ( 原始值 * ( 1.0 + 倍率1 + 倍率2 + ... + 倍率n ) + ( 追加1 + 追加2 + ... + 追加n ) ) * ( 1.0 * 累乘1 * 累乘2 * ... * 累乘n ) + ( 最终1 + 最终2 + ... + 最终n )
 ```
 
