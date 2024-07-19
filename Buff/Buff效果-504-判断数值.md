@@ -21,7 +21,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=CheckNumber.LE`|`50405,n`|小于等于|双目运算|
 
 生效时会立刻进行一次【判断】，如果判断成功，则对自己挂载 Buff 并引爆弹头。  
-详见 [AI脚本动作-判断数值](/触发与AI脚本动作/AI脚本动作-5-判断数值.md#ai脚本动作-判断数值)。  
+详见 [AI脚本动作-判断数值](/触发与AI脚本动作/AI脚本动作-4-判断数值.md#ai脚本动作-判断数值)。  
 `DamageProcessType` 属性无效。
 
 ### 效果强度值转换：1+M+N 项参数
@@ -95,7 +95,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=CheckNumberDeath.LE`|`50405,n`|小于等于|双目运算|
 
 生效时会立刻进行一次【判断】，如果判断成功，则对自己挂载 Buff 并引爆弹头。  
-详见 [AI脚本动作-判断数值](/触发与AI脚本动作/AI脚本动作-5-判断数值.md#ai脚本动作-判断数值)。  
+详见 [AI脚本动作-判断数值](/触发与AI脚本动作/AI脚本动作-4-判断数值.md#ai脚本动作-判断数值)。  
 `DamageProcessType` 属性无效。
 
 ### 效果强度值转换：1+M+N 项参数
