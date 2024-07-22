@@ -111,15 +111,15 @@ Effect.Type=<EffectType>
 
 |`Effect.Type=<EffectType>`|操作的能力属性 `ID`|操作的能力属性|备注|
 |:-:|:-:|:-:|:-|
-|`Effect.Type=Ability.ImmuneCrush`|`ImmuneCrush`|免疫碾压||
-|`Effect.Type=Ability.ImmuneCrushAdvance`|`ImmuneCrushAdvance`|免疫高级碾压||
-|`Effect.Type=Ability.ImmuneRadiation`|`ImmuneRadiation`|免疫辐射弹头||
-|`Effect.Type=Ability.ImmunePsionicDamage`|`ImmunePsionicDamage`|免疫心灵伤害弹头||
-|`Effect.Type=Ability.ImmunePsionic`|`ImmunePsionic`|免疫心控弹头||
-|`Effect.Type=Ability.ImmuneBerzerk`|`ImmuneBerzerk`|免疫狂暴弹头||
-|`Effect.Type=Ability.ImmunePoison`|`ImmunePoison`|免疫毒素弹头||
-|`Effect.Type=Ability.ImmuneWarp`|`ImmuneWarp`|免疫超时空传送弹头||
-|`Effect.Type=Ability.ImmuneEMP`|`ImmuneEMP`|免疫电磁脉冲弹头||
+|`Effect.Type=Prop.ImmuneCrush`|`ImmuneCrush`|免疫碾压||
+|`Effect.Type=Prop.ImmuneCrushAdvance`|`ImmuneCrushAdvance`|免疫高级碾压||
+|`Effect.Type=Prop.ImmuneRadiation`|`ImmuneRadiation`|免疫辐射弹头||
+|`Effect.Type=Prop.ImmunePsionicDamage`|`ImmunePsionicDamage`|免疫心灵伤害弹头||
+|`Effect.Type=Prop.ImmunePsionic`|`ImmunePsionic`|免疫心控弹头||
+|`Effect.Type=Prop.ImmuneBerzerk`|`ImmuneBerzerk`|免疫狂暴弹头||
+|`Effect.Type=Prop.ImmunePoison`|`ImmunePoison`|免疫毒素弹头||
+|`Effect.Type=Prop.ImmuneWarp`|`ImmuneWarp`|免疫超时空传送弹头||
+|`Effect.Type=Prop.ImmuneEMP`|`ImmuneEMP`|免疫电磁脉冲弹头||
 
 单位属性详细说明请见 [单位 - 额外属性](/功能扩展-单位.md#单位---额外属性)。
 
@@ -133,11 +133,11 @@ Buff 会周期性地增加单位能力属性的耐久度。
 
 |参数|说明|
 |:-:|:-|
-|【增加量】|0.2 = 额外增加 20%，1 = 额外增加 100%，默认值是 `0`。|
+|【能力耐久度】|去尾，1 = 增加 1 能力耐久度，-1 = 减少 1 能力耐久度，默认值是 `0`。|
 
 在此处：  
-`Power.Maxs.Total` = 可以达到的最大值（当前 Buff 的总增加量）；  
-`Power.Mins.Total` = 可以达到的最小值（当前 Buff 的总增加量）。
+`Power.Maxs.Total` = 可以达到的最大值（当前 Buff 的总能力耐久度）；  
+`Power.Mins.Total` = 可以达到的最小值（当前 Buff 的总能力耐久度）。
 
 ### 效果种类相关属性
 
@@ -146,12 +146,12 @@ Buff 会周期性地增加单位能力属性的耐久度。
 ```ini
 [SomeBuffType]
 ; 效果种类相关属性
-Effect.Anims=                                   ; 两个动画 , 【成功增加数值时播放的动画】【成功清除数值时播放的动画】 , 不写就不显示动画
+Effect.Anims=                                   ; 两个动画 , 【成功增加能力耐久度时播放的动画】【成功清除能力耐久度时播放的动画】 , 不写就不显示动画
 Effect.Counts=-1                                ; 整数 , 增加次数 , 次数耗尽会立刻进入结束状态 , 等于 0 会无法生效并直接进入结束状态 (算作次数耗尽) , 负数 = 无限次 , 默认值是 -1 , 单位 : 次
 Effect.Delay=0                                  ; 整数 , 每隔这么多帧增加一次 , 小于 0 按 0 算 , 但是每一帧最多增加一次 , 默认值是 0 , 单位 : 帧
 Effect.Modes=0,0                                ; 两个整数 , 【增加模式】【清除模式】 , 无效值默认为 0 , 默认值是 0
                                                 ; 【增加模式】
-                                                ; 0 = 固定值，不会清除已有的能力耐久度，当前 Buff 增加的数值会在 Delay 完毕时刷新
+                                                ; 0 = 固定值，不会清除已有的能力耐久度，当前 Buff 增加的能力耐久度会在 Delay 完毕时刷新
                                                 ; 1 = 正常增加
                                                 ; 【清除模式】
                                                 ; 0 = 进入结束状态时清除当前 Buff 带来的能力耐久度
