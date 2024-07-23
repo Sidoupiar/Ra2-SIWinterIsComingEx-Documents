@@ -21,6 +21,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.MultEXP`|`MultEXP`|倍率：经验值获取||
 |`Effect.Type=Prop.MultEXPProvide`|`MultEXPProvide`|倍率：经验值提供||
 |`Effect.Type=Prop.MultEXPCost`|`MultEXPCost`|倍率：经验值需求||
+|`Effect.Type=Prop.MultRangeWeapon`|`MultRangeWeapon`|倍率：武器射程||
 |||||
 |`Effect.Type=Prop.ExMultSpeed`|`ExMultSpeed`|累乘：移动||
 |`Effect.Type=Prop.ExMultArmor`|`ExMultArmor`|累乘：护甲||
@@ -30,6 +31,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.ExMultEXP`|`ExMultEXP`|累乘：经验值获取||
 |`Effect.Type=Prop.ExMultEXPProvide`|`ExMultEXPProvide`|累乘：经验值提供||
 |`Effect.Type=Prop.ExMultEXPCost`|`ExMultEXPCost`|累乘：经验值需求||
+|`Effect.Type=Prop.ExMultRangeWeapon`|`ExMultRangeWeapon`|累乘：武器射程||
 |||||
 |`Effect.Type=Prop.AddSpeed`|`AddSpeed`|追加：移动||
 |`Effect.Type=Prop.AddDamage`|`AddDamage`|追加：伤害||
