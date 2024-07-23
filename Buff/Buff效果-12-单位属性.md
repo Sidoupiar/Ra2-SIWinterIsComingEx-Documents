@@ -120,6 +120,12 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.ImmunePoison`|`ImmunePoison`|免疫毒素弹头||
 |`Effect.Type=Prop.ImmuneWarp`|`ImmuneWarp`|免疫超时空传送弹头||
 |`Effect.Type=Prop.ImmuneEMP`|`ImmuneEMP`|免疫电磁脉冲弹头||
+|||||
+|`Effect.Type=Prop.SelfHealing`|`SelfHealing`|自愈||
+|`Effect.Type=Prop.SelfHealing.Percent`|`SelfHealing.Percent`|自愈：每次恢复的生命值比例|效果值不会去尾。|
+|`Effect.Type=Prop.SelfHealing.Cap`|`SelfHealing.Cap`|自愈：最大生命值比例|效果值不会去尾。|
+|`Effect.Type=Prop.SelfHealing.Delay`|`SelfHealing.Delay`|自愈：恢复时间间隔||
+|`Effect.Type=Prop.SelfHealing.CombatDelay`|`SelfHealing.CombatDelay`|自愈：脱战时间间隔||
 
 单位属性详细说明请见 [单位 - 额外属性](/功能扩展-单位.md#单位---额外属性)。
 
