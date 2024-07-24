@@ -22,7 +22,9 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.MultEXPProvide`|`MultEXPProvide`|倍率：经验值提供||
 |`Effect.Type=Prop.MultEXPCost`|`MultEXPCost`|倍率：经验值需求||
 |`Effect.Type=Prop.MultRangeWeapon`|`MultRangeWeapon`|倍率：武器射程||
-|||||
+
+|`Effect.Type=<EffectType>`|操作的加成属性 `ID`|操作的加成属性|备注|
+|:-:|:-:|:-:|:-|
 |`Effect.Type=Prop.ExMultSpeed`|`ExMultSpeed`|累乘：移动||
 |`Effect.Type=Prop.ExMultArmor`|`ExMultArmor`|累乘：护甲||
 |`Effect.Type=Prop.ExMultVersus`|`ExMultVersus`|累乘：护甲伤害||
@@ -32,7 +34,9 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.ExMultEXPProvide`|`ExMultEXPProvide`|累乘：经验值提供||
 |`Effect.Type=Prop.ExMultEXPCost`|`ExMultEXPCost`|累乘：经验值需求||
 |`Effect.Type=Prop.ExMultRangeWeapon`|`ExMultRangeWeapon`|累乘：武器射程||
-|||||
+
+|`Effect.Type=<EffectType>`|操作的加成属性 `ID`|操作的加成属性|备注|
+|:-:|:-:|:-:|:-|
 |`Effect.Type=Prop.AddSpeed`|`AddSpeed`|追加：移动||
 |`Effect.Type=Prop.AddDamage`|`AddDamage`|追加：伤害||
 |`Effect.Type=Prop.AddAttack`|`AddAttack`|追加：攻击||
@@ -41,7 +45,9 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.AddEXPProvide`|`AddEXPProvide`|追加：经验值提供||
 |`Effect.Type=Prop.AddEXPCost`|`AddEXPCost`|追加：经验值需求||
 |`Effect.Type=Prop.AddRangeWeapon`|`AddRangeWeapon`|追加：武器射程||
-|||||
+
+|`Effect.Type=<EffectType>`|操作的加成属性 `ID`|操作的加成属性|备注|
+|:-:|:-:|:-:|:-|
 |`Effect.Type=Prop.FinalSpeed`|`FinalSpeed`|最终：移动||
 |`Effect.Type=Prop.FinalDamage`|`FinalDamage`|最终：伤害||
 |`Effect.Type=Prop.FinalAttack`|`FinalAttack`|最终：攻击||
@@ -122,7 +128,9 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.ImmunePoison`|`ImmunePoison`|免疫毒素弹头||
 |`Effect.Type=Prop.ImmuneWarp`|`ImmuneWarp`|免疫超时空传送弹头||
 |`Effect.Type=Prop.ImmuneEMP`|`ImmuneEMP`|免疫电磁脉冲弹头||
-|||||
+
+|`Effect.Type=<EffectType>`|操作的能力属性 `ID`|操作的能力属性|备注|
+|:-:|:-:|:-:|:-|
 |`Effect.Type=Prop.SelfHealing`|`SelfHealing`|自愈||
 |`Effect.Type=Prop.SelfHealing.Percent`|`SelfHealing.Percent`|自愈：每次恢复的生命值比例|效果值不会去尾。|
 |`Effect.Type=Prop.SelfHealing.Cap`|`SelfHealing.Cap`|自愈：最大生命值比例|效果值不会去尾。|
