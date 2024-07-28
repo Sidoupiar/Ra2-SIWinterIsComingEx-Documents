@@ -212,7 +212,7 @@ IDOverride=50010
 P2Name=IDCode
 P2Type=Number
 
-[SIIfHouseOwnsBuidlingAtWaypoint]
+[SIIfHouseOwnsBuidlingNotAtWaypoint]
 Name=If House Owns Buidling And Not At Waypoint
 Description=If house owns specific type of building and not at specific waypoint.
 IDOverride=50011
