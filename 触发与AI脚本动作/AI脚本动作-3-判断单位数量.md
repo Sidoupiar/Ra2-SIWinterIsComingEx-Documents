@@ -63,7 +63,7 @@ Add=0                                           ; 浮点数 , 增加值 , 默认
 [SomeNumberData]
 ; 基本属性
 Numbers=0                                       ; 浮点数列表 , 默认值是 0
-Types=Normal                                    ; 数值类型列表 , 每个浮点数的具体含义 , 默认值是 Normal (不区分大小写)
+Types=Normal                                    ; 数值类型列表 , 每个浮点数的具体类型 , 默认值是 Normal (不区分大小写)
                                                 ; 可用值 : Normal (普通数值) , Global (全局变量) , Local (局部变量) , House (指定的作战方局部变量)
                                                 ; 当值为 Global , Local , House 时 , Numbers 中对应的数值会作为索引 (去尾转为整数) 来取出相应的变量的值 , 变量不存在时取出它们的默认值 0
 Weights=1                                       ; 整数列表 , 每个数值的权重 , 小于 1 视为 1 处理 , 默认值是 1
@@ -210,7 +210,7 @@ Add=0                                           ; 浮点数 , 增加值 , 默认
 [SomeNumberData]
 ; 基本属性
 Numbers=0                                       ; 浮点数列表 , 默认值是 0
-Types=Normal                                    ; 数值类型列表 , 每个浮点数的具体含义 , 默认值是 Normal (不区分大小写)
+Types=Normal                                    ; 数值类型列表 , 每个浮点数的具体类型 , 默认值是 Normal (不区分大小写)
                                                 ; 可用值 : Normal (普通数值) , Global (全局变量) , Local (局部变量) , House (指定的作战方局部变量)
                                                 ; 当值为 Global , Local , House 时 , Numbers 中对应的数值会作为索引 (去尾转为整数) 来取出相应的变量的值 , 变量不存在时取出它们的默认值 0
 Weights=1                                       ; 整数列表 , 每个数值的权重 , 小于 1 视为 1 处理 , 默认值是 1
