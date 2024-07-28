@@ -195,60 +195,70 @@ P3Type=Number
 Name=If House Owns Origin Techno [指定作战方拥有指定类型的单位]
 Description=If house owns specific type of techno, this will check techno origin type and ignore type conversion. [指定作战方拥有指定类型的单位，检测原始类型，无视类型转换。]
 IDOverride=50000
+P2Name=IDCode
 P2Type=Number
 
 [SIIfNotHouseOwnsOriginTechno]
 Name=If Not House Owns Origin Techno [指定作战方拥有指定类型的单位]
 Description=If not house owns specific type of techno, this will check techno origin type and ignore type conversion. [指定作战方不拥有指定类型的单位，检测原始类型，无视类型转换。]
 IDOverride=50001
+P2Name=IDCode
 P2Type=Number
 
 [SIIfHouseOwnsBuidlingAtWaypoint]
 Name=If House Owns Buidling At Waypoint [当前作战方在指定路径点拥有指定建筑]
 Description=If house owns specific type of building at specific waypoint. [指定作战方不拥有指定类型的单位，检测原始类型，无视类型转换。]
 IDOverride=50010
+P2Name=IDCode
 P2Type=Number
 
 [SIIfHouseOwnsBuidlingAtWaypoint]
 Name=If House Owns Buidling And Not At Waypoint [当前作战方在指定路径点拥有指定建筑]
 Description=If house owns specific type of building and not at specific waypoint. [当前作战方不在指定路径点拥有指定建筑。]
 IDOverride=50011
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_EQ]
 Name=Check Number, Equal [判断数值 等于]
 Description=Check Number, Equal. [判断数值，等于。]
 IDOverride=50400
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_NE]
 Name=Check Number, NotEqual [判断数值 不等于]
 Description=Check Number, NotEqual. [判断数值，不等于。]
 IDOverride=50401
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_GT]
 Name=Check Number, Greater [判断数值 大于]
 Description=Check Number, Greater. [判断数值，大于。]
 IDOverride=50402
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_GE]
 Name=Check Number, GreaterEqual [判断数值 大于等于]
 Description=Check Number, GreaterEqual. [判断数值，大于等于。]
 IDOverride=50403
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_LT]
 Name=Check Number, Less [判断数值 小于]
 Description=Check Number, Less. [判断数值，小于。]
 IDOverride=50404
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_LE]
 Name=Check Number, LessEqual [判断数值 小于等于]
 Description=Check Number, LessEqual. [判断数值，小于等于。]
 IDOverride=50405
+P2Name=IDCode
 P2Type=Number
 ```
 

@@ -195,60 +195,70 @@ P3Type=Number
 Name=If House Owns Origin Techno
 Description=If house owns specific type of techno, this will check techno origin type and ignore type conversion.
 IDOverride=50000
+P2Name=IDCode
 P2Type=Number
 
 [SIIfNotHouseOwnsOriginTechno]
 Name=If Not House Owns Origin Techno
 Description=If not house owns specific type of techno, this will check techno origin type and ignore type conversion.
 IDOverride=50001
+P2Name=IDCode
 P2Type=Number
 
 [SIIfHouseOwnsBuidlingAtWaypoint]
 Name=If House Owns Buidling At Waypoint
 Description=If house owns specific type of building at specific waypoint.
 IDOverride=50010
+P2Name=IDCode
 P2Type=Number
 
 [SIIfHouseOwnsBuidlingAtWaypoint]
 Name=If House Owns Buidling And Not At Waypoint
 Description=If house owns specific type of building and not at specific waypoint.
 IDOverride=50011
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_EQ]
 Name=Check Number, Equal
 Description=Check Number, Equal.
 IDOverride=50400
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_NE]
 Name=Check Number, NotEqual
 Description=Check Number, NotEqual.
 IDOverride=50401
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_GT]
 Name=Check Number, Greater
 Description=Check Number, Greater.
 IDOverride=50402
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_GE]
 Name=Check Number, GreaterEqual
 Description=Check Number, GreaterEqual.
 IDOverride=50403
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_LT]
 Name=Check Number, Less
 Description=Check Number, Less.
 IDOverride=50404
+P2Name=IDCode
 P2Type=Number
 
 [SICheckNumber_LE]
 Name=Check Number, LessEqual
 Description=Check Number, LessEqual.
 IDOverride=50405
+P2Name=IDCode
 P2Type=Number
 ```
 
