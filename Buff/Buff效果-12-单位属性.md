@@ -22,6 +22,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.MultEXPProvide`|`MultEXPProvide`|倍率：经验值提供||
 |`Effect.Type=Prop.MultEXPCost`|`MultEXPCost`|倍率：经验值需求||
 |`Effect.Type=Prop.MultRangeWeapon`|`MultRangeWeapon`|倍率：武器射程||
+|`Effect.Type=Prop.MultCellSpread`|`MultCellSpread`|倍率：弹头溅射范围||
 
 |`Effect.Type=<EffectType>`|操作的加成属性 `ID`|操作的加成属性|备注|
 |:-:|:-:|:-:|:-|
@@ -34,6 +35,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.ExMultEXPProvide`|`ExMultEXPProvide`|累乘：经验值提供||
 |`Effect.Type=Prop.ExMultEXPCost`|`ExMultEXPCost`|累乘：经验值需求||
 |`Effect.Type=Prop.ExMultRangeWeapon`|`ExMultRangeWeapon`|累乘：武器射程||
+|`Effect.Type=Prop.ExMultCellSpread`|`ExMultCellSpread`|累乘：弹头溅射范围||
 
 |`Effect.Type=<EffectType>`|操作的加成属性 `ID`|操作的加成属性|备注|
 |:-:|:-:|:-:|:-|
@@ -45,6 +47,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.AddEXPProvide`|`AddEXPProvide`|追加：经验值提供||
 |`Effect.Type=Prop.AddEXPCost`|`AddEXPCost`|追加：经验值需求||
 |`Effect.Type=Prop.AddRangeWeapon`|`AddRangeWeapon`|追加：武器射程||
+|`Effect.Type=Prop.AddCellSpread`|`AddCellSpread`|追加：弹头溅射范围||
 
 |`Effect.Type=<EffectType>`|操作的加成属性 `ID`|操作的加成属性|备注|
 |:-:|:-:|:-:|:-|
@@ -56,6 +59,7 @@ Effect.Type=<EffectType>
 |`Effect.Type=Prop.FinalEXPProvide`|`FinalEXPProvide`|最终：经验值提供||
 |`Effect.Type=Prop.FinalEXPCost`|`FinalEXPCost`|最终：经验值需求||
 |`Effect.Type=Prop.FinalRangeWeapon`|`FinalRangeWeapon`|最终：武器射程||
+|`Effect.Type=Prop.FinalCellSpread`|`FinalCellSpread`|最终：弹头溅射范围||
 
 单位属性详细说明请见 [单位 - 额外属性](/功能扩展-单位.md#单位---额外属性)。
 
