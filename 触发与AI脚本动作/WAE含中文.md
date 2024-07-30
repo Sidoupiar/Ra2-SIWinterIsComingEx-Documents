@@ -17,6 +17,24 @@ IDOverride=50001
 P3Name=Money
 P3Type=Number
 
+
+
+[SIRandomReinforcementTechno]
+Name=Random Reinforcement Techno [随机援军 单位列表]
+Description=Random reinforcement techno. [随机援军，单位列表。]
+IDOverride=50010
+P3Name=IDCode
+P3Type=Number
+
+[SIRandomReinforcementTaskForce]
+Name=Random Reinforcement TaskForce [随机援军 特遣部队列表]
+Description=Random reinforcement TaskForce. [随机援军，特遣部队列表。]
+IDOverride=50011
+P3Name=IDCode
+P3Type=Number
+
+
+
 [SIOperateHouseVariable_Add]
 Name=Operate House Variable, Add [操作作战方局部变量 加]
 Description=Operate House Variable, Add. [操作作战方局部变量，加。]
@@ -205,6 +223,8 @@ IDOverride=50001
 P2Name=IDCode
 P2Type=Number
 
+
+
 [SIIfHouseOwnsBuidlingAtWaypoint]
 Name=If House Owns Buidling At Waypoint [当前作战方在指定路径点拥有指定建筑]
 Description=If house owns specific type of building at specific waypoint. [指定作战方不拥有指定类型的单位，检测原始类型，无视类型转换。]
@@ -218,6 +238,8 @@ Description=If house owns specific type of building and not at specific waypoint
 IDOverride=50011
 P2Name=IDCode
 P2Type=Number
+
+
 
 [SICheckNumber_EQ]
 Name=Check Number, Equal [判断数值 等于]
@@ -348,6 +370,8 @@ Option9=10,Blank Key J
 Option10=11,Blank Key K
 Option11=12,Blank Key L
 
+
+
 [SIMarkBuff]
 Name=Mark Buff [Buff 挂载]
 Description=Mark Buffs for all team members according to the settings. [按照设置为当前作战小队的所有成员挂载 Buff。]
@@ -389,6 +413,8 @@ Description=Change Buffs for all team members according to the settings. [按照
 IDOverride=50105
 ParamDescription=IDCode
 ParamType=Number
+
+
 
 [SIOperateHouseVariable_Add]
 Name=Operate House Variable, Add [操作作战方局部变量 加]
@@ -537,6 +563,8 @@ IDOverride=50234
 ParamDescription=IDCode
 ParamType=Number
 
+
+
 [SICheckTechnoCountAndSwitchScript_EQ]
 Name=Check Techno Count And Switch Script, Equal [判断单位数量并切换脚本 等于]
 Description=Check Techno Count And Switch Script, Equal. [判断单位数量并切换脚本，等于。]
@@ -578,6 +606,8 @@ Description=Check Techno Count And Switch Script, LessEqual. [判断单位数量
 IDOverride=50305
 ParamDescription=IDCode
 ParamType=Number
+
+
 
 [SICheckTwoTechnoCountsAndSwitchScript_EQ]
 Name=Check Two Techno Counts And Switch Script, Equal [判断两种单位数量并切换脚本 等于]
@@ -621,6 +651,8 @@ IDOverride=50315
 ParamDescription=IDCode
 ParamType=Number
 
+
+
 [SICheckTechnoCountAndSwitchScript_Waiting_EQ]
 Name=Check Techno Count And Switch Script, Waiting, Equal [判断单位数量并切换脚本 等待版本 等于]
 Description=Check Techno Count And Switch Script, Waiting, Equal. [判断单位数量并切换脚本，等待版本，等于。]
@@ -663,6 +695,8 @@ IDOverride=50325
 ParamDescription=IDCode
 ParamType=Number
 
+
+
 [SICheckTwoTechnoCountsAndSwitchScript_Waiting_EQ]
 Name=Check Two Techno Counts And Switch Script, Waiting, Equal [判断两种单位数量并切换脚本 等待版本 等于]
 Description=Check Two Techno Counts And Switch Script, Waiting, Equal. [判断两种单位数量并切换脚本，等待版本，等于。]
@@ -704,6 +738,8 @@ Description=Check Two Techno Counts And Switch Script, Waiting, LessEqual. [判�
 IDOverride=50335
 ParamDescription=IDCode
 ParamType=Number
+
+
 
 [SICheckNumber_EQ]
 Name=Check Number And Switch Script, Equal [判断数值并切换脚本 等于]

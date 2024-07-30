@@ -17,6 +17,24 @@ IDOverride=50001
 P3Name=Money
 P3Type=Number
 
+
+
+[SIRandomReinforcementTechno]
+Name=Random Reinforcement Techno
+Description=Random reinforcement techno.
+IDOverride=50010
+P3Name=IDCode
+P3Type=Number
+
+[SIRandomReinforcementTaskForce]
+Name=Random Reinforcement TaskForce
+Description=Random reinforcement TaskForce.
+IDOverride=50011
+P3Name=IDCode
+P3Type=Number
+
+
+
 [SIOperateHouseVariable_Add]
 Name=Operate House Variable, Add
 Description=Operate House Variable, Add.
@@ -205,6 +223,8 @@ IDOverride=50001
 P2Name=IDCode
 P2Type=Number
 
+
+
 [SIIfHouseOwnsBuidlingAtWaypoint]
 Name=If House Owns Buidling At Waypoint
 Description=If house owns specific type of building at specific waypoint.
@@ -218,6 +238,8 @@ Description=If house owns specific type of building and not at specific waypoint
 IDOverride=50011
 P2Name=IDCode
 P2Type=Number
+
+
 
 [SICheckNumber_EQ]
 Name=Check Number, Equal
@@ -347,6 +369,8 @@ Option8=9,Blank Key I
 Option9=10,Blank Key J
 Option10=11,Blank Key K
 Option11=12,Blank Key L
+
+
 
 [SIMarkBuff]
 Name=Mark Buff
@@ -537,6 +561,8 @@ IDOverride=50234
 ParamDescription=IDCode
 ParamType=Number
 
+
+
 [SICheckTechnoCountAndSwitchScript_EQ]
 Name=Check Techno Count And Switch Script, Equal
 Description=Check Techno Count And Switch Script, Equal.
@@ -578,6 +604,8 @@ Description=Check Techno Count And Switch Script, LessEqual.
 IDOverride=50305
 ParamDescription=IDCode
 ParamType=Number
+
+
 
 [SICheckTwoTechnoCountsAndSwitchScript_EQ]
 Name=Check Two Techno Counts And Switch Script, Equal
@@ -621,6 +649,8 @@ IDOverride=50315
 ParamDescription=IDCode
 ParamType=Number
 
+
+
 [SICheckTechnoCountAndSwitchScript_Waiting_EQ]
 Name=Check Techno Count And Switch Script, Waiting, Equal
 Description=Check Techno Count And Switch Script, Waiting, Equal.
@@ -663,6 +693,8 @@ IDOverride=50325
 ParamDescription=IDCode
 ParamType=Number
 
+
+
 [SICheckTwoTechnoCountsAndSwitchScript_Waiting_EQ]
 Name=Check Two Techno Counts And Switch Script, Waiting, Equal
 Description=Check Two Techno Counts And Switch Script, Waiting, Equal.
@@ -704,6 +736,8 @@ Description=Check Two Techno Counts And Switch Script, Waiting, LessEqual.
 IDOverride=50335
 ParamDescription=IDCode
 ParamType=Number
+
+
 
 [SICheckNumber_EQ]
 Name=Check Number And Switch Script, Equal
