@@ -19,17 +19,10 @@ P3Type=Number
 
 
 
-[SIRandomReinforcementTechno]
-Name=Random Reinforcement Techno
-Description=Random reinforcement techno.
+[SIRandomReinforcement]
+Name=Random Reinforcement
+Description=Random reinforcement.
 IDOverride=50010
-P3Name=IDCode
-P3Type=Number
-
-[SIRandomReinforcementTaskForce]
-Name=Random Reinforcement TaskForce
-Description=Random reinforcement TaskForce.
-IDOverride=50011
 P3Name=IDCode
 P3Type=Number
 

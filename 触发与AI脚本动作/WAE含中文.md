@@ -19,17 +19,10 @@ P3Type=Number
 
 
 
-[SIRandomReinforcementTechno]
-Name=Random Reinforcement Techno [随机援军 单位列表]
-Description=Random reinforcement techno. [随机援军，单位列表。]
+[SIRandomReinforcement]
+Name=Random Reinforcement [随机援军]
+Description=Random reinforcement. [随机援军。]
 IDOverride=50010
-P3Name=IDCode
-P3Type=Number
-
-[SIRandomReinforcementTaskForce]
-Name=Random Reinforcement TaskForce [随机援军 特遣部队列表]
-Description=Random reinforcement TaskForce. [随机援军，特遣部队列表。]
-IDOverride=50011
 P3Name=IDCode
 P3Type=Number
 
