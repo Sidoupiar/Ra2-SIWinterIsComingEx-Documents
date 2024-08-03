@@ -234,6 +234,15 @@ P2Type=Number
 
 
 
+[SIIfHouseOwnsBuidlingNearWaypoint]
+Name=If House Owns Buidling Near Waypoint
+Description=If house owns specific type of building near specific waypoint.
+IDOverride=50020
+P2Name=IDCode
+P2Type=Number
+
+
+
 [SICheckNumber_EQ]
 Name=Check Number, Equal
 Description=Check Number, Equal.

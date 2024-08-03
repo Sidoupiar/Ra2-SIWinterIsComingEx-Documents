@@ -220,7 +220,7 @@ P2Type=Number
 
 [SIIfHouseOwnsBuidlingAtWaypoint]
 Name=If House Owns Buidling At Waypoint [当前作战方在指定路径点拥有指定建筑]
-Description=If house owns specific type of building at specific waypoint. [指定作战方不拥有指定类型的单位，检测原始类型，无视类型转换。]
+Description=If house owns specific type of building at specific waypoint. [当前作战方在指定路径点拥有指定建筑。]
 IDOverride=50010
 P2Name=IDCode
 P2Type=Number
@@ -229,6 +229,15 @@ P2Type=Number
 Name=If House Owns Buidling And Not At Waypoint [当前作战方在指定路径点拥有指定建筑]
 Description=If house owns specific type of building and not at specific waypoint. [当前作战方不在指定路径点拥有指定建筑。]
 IDOverride=50011
+P2Name=IDCode
+P2Type=Number
+
+
+
+[SIIfHouseOwnsBuidlingNearWaypoint]
+Name=If House Owns Buidling Near Waypoint [当前作战方在指定路径点附近存在建筑]
+Description=If house owns specific type of building near specific waypoint. [当前作战方在指定路径点附近存在建筑。]
+IDOverride=50020
 P2Name=IDCode
 P2Type=Number
 
