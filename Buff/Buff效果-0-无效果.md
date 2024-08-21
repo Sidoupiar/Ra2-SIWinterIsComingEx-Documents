@@ -97,6 +97,8 @@ Effect.Timer=0                                  ; 整数 , 生效时间的最大
 |`Digital.Quaternary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Button=`|-|-|-|-|未使用按钮功能。|
 
+具体属性详见 [完整结构-数值显示相关属性](/Buff/类型-Buff.md#完整结构)。
+
 
 
 ## 只有可以点击 <主动>
@@ -136,6 +138,8 @@ Effect.Timer=0                                  ; 整数 , 生效时间的最大
 |`Digital.Tertiary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Quaternary=`|-|-|-|-|未使用此项数值显示。|
 |`Digital.Button=`|-|-|-|-|未使用按钮功能。|
+
+具体属性详见 [完整结构-数值显示相关属性](/Buff/类型-Buff.md#完整结构)。
 
 
 
