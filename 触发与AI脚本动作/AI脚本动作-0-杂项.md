@@ -165,6 +165,8 @@ EffectRange=3                                   ; 浮点数 , 单位的最大投
 如果是玩家，则设置 `Guard` 任务；  
 如果是 AI，则设置 `Hunt` 任务。
 
+单位的 `SpeedType` 不能是 `Winged`。
+
 均位于 `rulesmd.ini`：
 
 ```ini
