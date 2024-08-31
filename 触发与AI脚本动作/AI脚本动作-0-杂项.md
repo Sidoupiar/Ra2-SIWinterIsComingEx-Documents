@@ -148,6 +148,7 @@ AnimPacks=                                      ; 动画数据集合列表 , 使
 ; 数据属性
 TheseBuffs=                                     ; Buff 列表 , 投放者向投放出来的单位挂载的 Buff , 不写就不挂载 , 投放者通常的小队的队长
 ThoseBuffs=                                     ; Buff 列表 , 投放出来的单位向投放者挂载的 Buff , 不写就不挂载
+                                                ; 需要注意的是 , 每个投放出来的单位都会尝试向投放者挂载 Buff , 而且同类型的 Buff 不能共存 , 因此实际情况可能会比较混乱
 BuffSets=                                       ; Buff 参数设置列表 , 目标 Buff 会合并此设置 , 按顺序排列 , 前 N 项对应 TheseBuffs 的 Buff , 后 M 项对应 ThoseBuffs 的 Buff
 Single=yes                                      ; yes/no , 是否投放的单位都处于同一个作战小队中 , 而非每个单位一个独立的作战小队 , 默认值是 yes
                                                 ; 减少作战小队总数量有助于提高游戏的流畅度
