@@ -164,14 +164,14 @@ Effect.OffsetTargetBaseDirection=Self           ; 跟随旋转类型 , 用于决
 ; 需要注意的是 , 这里的属性是用于定义【效果强度值】如何转化为【实际效果】的 , Buff 的实际上的【效果强度值】由【Buff 参数设置】中的 Power 属性提供
 Power.Bases=0                                   ; 浮点数列表 , 实际效果的基础数值 , 默认值是 0
 Power.Mults=0                                   ; 浮点数列表 , 效果强度值的转换效率 , 默认值是 0
-Power.Maxs=None                                 ; 浮点数列表 , 效果的数值上限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
-Power.Mins=None                                 ; 浮点数列表 , 效果的数值下限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
-Power.Maxs.Total=None                           ; 浮点数列表 , 实际数值的数值上限 (【实际数值的上下限】效果取决于效果种类的具体参数项) , None 或 N = 不限制 , 默认值是 None (不区分大小写)
-Power.Mins.Total=None                           ; 浮点数列表 , 实际数值的数值下限 (【实际数值的上下限】效果取决于效果种类的具体参数项) , None 或 N = 不限制 , 默认值是 None (不区分大小写)
-Power.Maxs.Real=None                            ; 浮点数列表 , 在效果强度值转换的过程中参与计算的效果强度值上限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
-Power.Mins.Real=None                            ; 浮点数列表 , 在效果强度值转换的过程中参与计算的效果强度值下限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
-Power.Maxs.Effect=None                          ; 浮点数列表 , 生效区间上限 , 只有效果强度值小于等于此值时才参与计算 , None 或 N = 不限制 , 默认值时 None (不区分大小写)
-Power.Mins.Effect=None                          ; 浮点数列表 , 生效区间下限 , 只有效果强度值大于等于此值时才参与计算 , None 或 N = 不限制 , 默认值时 None (不区分大小写)
+Power.Maxs=None                                 ; 浮点数列表 , 效果强度值的限制条件 , 计算 Power.Bases 和 Power.Mults 后的数值上限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
+Power.Mins=None                                 ; 浮点数列表 , 效果强度值的限制条件 , 计算 Power.Bases 和 Power.Mults 后的数值下限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
+Power.Maxs.Total=None                           ; 浮点数列表 , 效果强度值的限制条件 , 实际效果的数值上限 (【实际数值的上下限】效果取决于效果种类的具体参数项) , None 或 N = 不限制 , 默认值是 None (不区分大小写)
+Power.Mins.Total=None                           ; 浮点数列表 , 效果强度值的限制条件 , 实际效果的数值下限 (【实际数值的上下限】效果取决于效果种类的具体参数项) , None 或 N = 不限制 , 默认值是 None (不区分大小写)
+Power.Maxs.Real=None                            ; 浮点数列表 , 效果强度值的限制条件 , 在效果强度值转换的过程中参与计算的效果强度值上限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
+Power.Mins.Real=None                            ; 浮点数列表 , 效果强度值的限制条件 , 在效果强度值转换的过程中参与计算的效果强度值下限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
+Power.Maxs.Effect=None                          ; 浮点数列表 , 效果强度值的限制条件 , 效果强度值生效区间上限 , 只有效果强度值小于等于此值时才参与计算 , 否则视为 0 , None 或 N = 不限制 , 默认值时 None (不区分大小写)
+Power.Mins.Effect=None                          ; 浮点数列表 , 效果强度值的限制条件 , 效果强度值生效区间下限 , 只有效果强度值大于等于此值时才参与计算 , 否则视为 0 , None 或 N = 不限制 , 默认值时 None (不区分大小写)
 
 ; 广播与监听相关属性
 ; 需要 Buff 处于生效阶段 , 但是并不是所有的效果种类都支持广播与监听
