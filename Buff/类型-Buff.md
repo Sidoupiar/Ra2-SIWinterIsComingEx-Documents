@@ -160,8 +160,10 @@ Effect.OffsetTargetDirection=Self               ; 跟随旋转类型 , 用于决
 Effect.OffsetTargetBaseDirection=Self           ; 跟随旋转类型 , 用于决定 Effect.OffsetTargetBase 如何跟随旋转
                                                 ; 可用值 : Self = 实际朝向 , Body = 身体朝向 , Target = 自身 -> 目标的方向作为朝向 , Random = 随机朝向 , None = 不跟随旋转 , Same = 使用 Effect.OffsetSourceBaseDirection 的值 , 默认值是 Self (不区分大小写)
 
-; 效果强度值相关属性
+; 效果强度相关属性
 ; 需要注意的是 , 这里的属性是用于定义【效果强度值】如何转化为【实际效果】的 , Buff 的实际上的【效果强度值】由【Buff 参数设置】中的 Power 属性提供
+Power.Startup=0                                 ; 浮点数 , Buff 的默认效果强度值 , 默认值是 0
+                                                ; 如果 After.Type=Reset , 则每次变成挂载状态时 Buff 的实际效果强度值都会被重置为此值
 Power.Bases=0                                   ; 浮点数列表 , 实际效果的基础数值 , 默认值是 0
 Power.Mults=0                                   ; 浮点数列表 , 效果强度值的转换效率 , 默认值是 0
 Power.Maxs=None                                 ; 浮点数列表 , 效果强度值的限制条件 , 计算 Power.Bases 和 Power.Mults 后的数值上限 , None 或 N = 不限制 , 默认值是 None (不区分大小写)
