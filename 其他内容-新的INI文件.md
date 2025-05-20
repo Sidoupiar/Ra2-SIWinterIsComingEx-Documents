@@ -69,6 +69,9 @@
 |`@Type=ai`|aimd.ini||
 |`@Type=ui`|uimd.ini||
 |`@Type=eva`|evamd.ini||
+|`@Type=battle`|battlemd.ini||
+|`@Type=mission`|missionmd.ini||
+|`@Type=mapsel`|mapselmd.ini||
 
 1. 如果目标 INI 文件中存在这个代码块，则进行代码块合并，如何合并取决于 `@Mode` 属性。
 这项规则同样适用于注册表。
